@@ -42,7 +42,7 @@ The following sections describe the use of each type of supports condition.
 
 The declaration syntax checks if a browser supports the specified `<property>: <value>` declaration.
 The declaration must be surrounded by parentheses.
-The following example returns true and applies the CSS style if the browser supports the expression `transform-origin: 5% 5%`:
+The following example returns true if the browser supports the expression `transform-origin: 5% 5%`:
 
 ```css
 @supports (transform-origin: 5% 5%) {
@@ -54,7 +54,7 @@ The following example returns true and applies the CSS style if the browser supp
 The function syntax checks if a browser supports values or expressions within the function.
 The functions supported in the function syntax are described in the following sections.
 
-#### `selector()` {{Experimental_Inline}}
+#### `selector()`
 
 This function evaluates if a browser supports the specified selector syntax.
 The following example returns true and applies the CSS style if the browser supports the [child combinator](/en-US/docs/Web/CSS/Child_combinator):

@@ -51,7 +51,7 @@ Things have improved significantly since then; modern browsers do a good job of 
 These days, most cross-browser JavaScript problems are seen:
 
 - When poor-quality browser-sniffing code, feature-detection code, and vendor prefix usage block browsers from running code they could otherwise use just fine.
-- When developers make use of new/nascent JavaScript features, modern Web APIs, etc.) in their code, and find that such features don't work in older browsers.
+- When developers make use of new/nascent JavaScript features, modern Web APIs, etc. in their code, and find that such features don't work in older browsers.
 
 We'll explore all these problems and more below.
 
@@ -189,7 +189,7 @@ In Firefox, the Debugger tab looks like this:
 
 The main feature of such tools is the ability to add breakpoints to code — these are points where the execution of the code stops, and at that point you can examine the environment in its current state and see what is going on.
 
-Let's get to work. The error is now being thrown at line 26. Click on line number 26 in the center panel to add a breakpoint to it (you'll see a blue arrow appear over the top of it). Now refresh the page (Cmd/Ctrl + R) — the browser will pause execution of the code at line 51. At this point, the right-hand side will update to show some very useful information.
+Let's get to work. The error is now being thrown at line 26. Click on line number 26 in the center panel to add a breakpoint to it (you'll see a blue arrow appear over the top of it). Now refresh the page (Cmd/Ctrl + R) — the browser will pause execution of the code at line 26. At this point, the right-hand side will update to show some very useful information.
 
 ![Firefox debugger with a breakpoint](breakpoint.png)
 
@@ -364,8 +364,6 @@ This function creates a new `<script>` element, then sets its `src` attribute to
 Note that polyfills.js is basically the two polyfills we are using put together into one file. We did this manually, but there are cleverer solutions that will automatically generate bundles for you — see [Browserify](https://browserify.org/) (see [Getting started with Browserify](https://www.sitepoint.com/getting-started-browserify/) for a basic tutorial). It is a good idea to bundle JS files into one like this — reducing the number of HTTP requests you need to make improves the performance of your site.
 
 You can see this code in action in [fetch-polyfill-only-when-needed.html](https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/javascript/fetch-polyfill-only-when-needed.html) (see the [source code also](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/javascript/fetch-polyfill-only-when-needed.html)). We'd like to make it clear that we can't take credit for this code — it was originally written by Philip Walton. Check out his article [Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/) for the original code, plus a lot of useful explanation around the wider subject).
-
-> **Note:** There are some 3rd party options to consider, for example [Polyfill.io](https://polyfill.io/) — this is a meta-polyfill library that will look at each browser's capabilities and apply polyfills as needed, depending on what APIs and JS features you are using in your code.
 
 #### JavaScript transpiling
 

@@ -5,7 +5,7 @@ page-type: guide
 browser-compat: css.at-rules.container
 ---
 
-{{CSSRef}}{{SeeCompatTable}}
+{{CSSRef}}
 
 [Container queries](/en-US/docs/Web/CSS/CSS_containment/Container_queries) enable you to apply styles to elements nested within a specific container based on the features of that container. The query returns true or false depending on whether the query condition is true for the container.
 
@@ -21,7 +21,7 @@ There are two types of container queries: _container size queries_ and _containe
 
 - **Container size queries**
 
-  - : Size queries enable applying styles to elements based on the current [size](/en-US/docs/Web/CSS/@container#descriptors) of a containing element, including the orientation and aspect ratio. The containing elements need to be explicitly declared as _size query containers_.
+  - : Size queries enable applying styles to elements based on the current [size](/en-US/docs/Web/CSS/@container#descriptors) of a containing element, including the orientation and {{glossary("aspect ratio")}}. The containing elements need to be explicitly declared as _size query containers_.
 
 - **Container style queries**
   - : Style queries enable applying styles to elements based on a containing element's style features. Any non-empty element can be a style query container. Currently, the only style feature supported by style queries is CSS [custom properties](/en-US/docs/Web/CSS/Using_CSS_custom_properties). In this case, the query returns true or false depending on the computed value of the containing element's custom properties. When container style queries are fully supported, they will enable you to apply styles to any element's descendants based on any property, declaration, or computed value — for example if the container is `display: inline flex` or has a non-transparent background color.
@@ -162,7 +162,7 @@ In the future, we'll be able to write style queries like so:
 }
 ```
 
-The `style()` functional notation is used to differentiate style queries from size queries. While not yet supported, we will eventually be able to query regular CSS declarations such as `max-width: 100vw`. Querying `@containers (max-width: 100vw)` is a size query; containment with {{cssxref("container-type")}}, or the {{cssxref("container")}} shorthand, is needed. That query will return true if the container is 100vw or less. That is different from querying `@containers style(max-width: 100vw)`, which is a style query; when supported, this query will return true if the container has a {{cssxref("max-width")}} value of `100vw`.
+The `style()` functional notation is used to differentiate style queries from size queries. While not yet supported, we will eventually be able to query regular CSS declarations such as `max-width: 100vw`. Querying `@container (max-width: 100vw)` is a size query; containment with {{cssxref("container-type")}}, or the {{cssxref("container")}} shorthand, is needed. That query will return true if the container is 100vw or less. That is different from querying `@container style(max-width: 100vw)`, which is a style query; when supported, this query will return true if the container has a {{cssxref("max-width")}} value of `100vw`.
 
 Until style queries for regular CSS declarations and properties are supported, we are limited to including only custom properties as the `style()` parameter, with or without a value:
 
@@ -431,5 +431,6 @@ These features are not yet supported in any browser.
 - CSS {{Cssxref("contain")}} property
 - CSS {{Cssxref("container")}} shorthand property
 - CSS {{Cssxref("container-name")}} property
+- [Understanding `aspect-ratio`](/en-US/docs/Web/CSS/CSS_box_sizing/Understanding_aspect-ratio)
 - [Getting Started with Style Queries](https://developer.chrome.com/docs/css-ui/style-queries) (2022)
 - [Style queries](https://una.im/style-queries/) via una.im (2022)

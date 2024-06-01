@@ -376,6 +376,10 @@
       "inh": "AudioNode",
       "impl": []
     },
+    "ChapterInformation": {
+      "inh": "",
+      "impl": []
+    },
     "CharacterBoundsUpdateEvent": {
       "inh": "Event",
       "impl": []
@@ -528,6 +532,10 @@
       "inh": "CSSRule",
       "impl": []
     },
+    "CSSFontFaceDescriptors": {
+      "inh": "CSSStyleDeclaration",
+      "impl": []
+    },
     "CSSFontFaceRule": {
       "inh": "CSSRule",
       "impl": []
@@ -640,6 +648,10 @@
       "inh": "CSSRule",
       "impl": []
     },
+    "CSSNestRule": {
+      "inh": "CSSGroupingRule",
+      "impl": []
+    },
     "CSSNumericArray": {
       "inh": "",
       "impl": []
@@ -654,6 +666,10 @@
     },
     "CSSOKLCH": {
       "inh": "CSSColorValue",
+      "impl": []
+    },
+    "CSSPageDescriptors": {
+      "inh": "CSSStyleDeclaration",
       "impl": []
     },
     "CSSPageRule": {
@@ -690,6 +706,10 @@
     },
     "CSSPerspective": {
       "inh": "CSSTransformComponent",
+      "impl": []
+    },
+    "CSSPositionTryDescriptors": {
+      "inh": "CSSStyleDeclaration",
       "impl": []
     },
     "CSSPositionTryRule": {
@@ -746,6 +766,10 @@
     },
     "CSSStyleDeclaration": {
       "inh": "",
+      "impl": []
+    },
+    "CSSStyleProperties": {
+      "inh": "CSSStyleDeclaration",
       "impl": []
     },
     "CSSStyleRule": {
@@ -840,6 +864,10 @@
       "inh": "ReportBody",
       "impl": []
     },
+    "DeviceChangeEvent": {
+      "inh": "Event",
+      "impl": []
+    },
     "DeviceMotionEvent": {
       "inh": "Event",
       "impl": []
@@ -858,6 +886,10 @@
     },
     "DevicePosture": {
       "inh": "EventTarget",
+      "impl": []
+    },
+    "DigitalCredential": {
+      "inh": "Credential",
       "impl": []
     },
     "DigitalGoodsService": {
@@ -1876,6 +1908,10 @@
       "inh": "UIEvent",
       "impl": []
     },
+    "InstallEvent": {
+      "inh": "ExtendableEvent",
+      "impl": []
+    },
     "Instance": {
       "inh": "",
       "impl": []
@@ -2328,6 +2364,14 @@
       "inh": "ExtendableEvent",
       "impl": []
     },
+    "NotRestoredReasonDetails": {
+      "inh": "",
+      "impl": []
+    },
+    "NotRestoredReasons": {
+      "inh": "",
+      "impl": []
+    },
     "OES_draw_buffers_indexed": {
       "inh": "",
       "impl": []
@@ -2401,6 +2445,10 @@
       "impl": []
     },
     "PageRevealEvent": {
+      "inh": "Event",
+      "impl": []
+    },
+    "PageSwapEvent": {
       "inh": "Event",
       "impl": []
     },
@@ -2988,18 +3036,6 @@
       "inh": "",
       "impl": []
     },
-    "SharedStorageOperation": {
-      "inh": "",
-      "impl": []
-    },
-    "SharedStorageRunOperation": {
-      "inh": "SharedStorageOperation",
-      "impl": []
-    },
-    "SharedStorageSelectURLOperation": {
-      "inh": "SharedStorageOperation",
-      "impl": []
-    },
     "SharedStorageWorklet": {
       "inh": "Worklet",
       "impl": []
@@ -3018,14 +3054,6 @@
     },
     "SnapEvent": {
       "inh": "Event",
-      "impl": []
-    },
-    "SnapTargetArray": {
-      "inh": "",
-      "impl": []
-    },
-    "SnapTargetList": {
-      "inh": "",
       "impl": []
     },
     "SourceBuffer": {
@@ -3576,6 +3604,10 @@
       "inh": "",
       "impl": []
     },
+    "TextEvent": {
+      "inh": "UIEvent",
+      "impl": []
+    },
     "TextFormat": {
       "inh": "",
       "impl": []
@@ -3797,6 +3829,10 @@
       "impl": []
     },
     "ViewTransition": {
+      "inh": "",
+      "impl": []
+    },
+    "ViewTransitionTypeSet": {
       "inh": "",
       "impl": []
     },

@@ -39,7 +39,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 
     > **Note:** This attribute is considered a legacy attribute and redefined as `allow="payment"`.
 
-- `browsingtopics` {{Experimental_Inline}}
+- `browsingtopics` {{Experimental_Inline}} {{non-standard_inline}}
 
   - : A boolean attribute that, if present, specifies that the selected topics for the current user should be sent with the request for the {{htmlelement("iframe")}}'s source. See [Using the Topics API](/en-US/docs/Web/API/Topics_API/Using) for more details.
 
@@ -241,7 +241,7 @@ Without this title, they have to navigate into the `<iframe>` to determine what 
     </tr>
     <tr>
       <th scope="row">Tag omission</th>
-      <td>{{no_tag_omission}}</td>
+      <td>None, both the starting and ending tag are mandatory.</td>
     </tr>
     <tr>
       <th scope="row">Permitted parents</th>
